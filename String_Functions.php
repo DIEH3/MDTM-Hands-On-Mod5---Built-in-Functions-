@@ -108,7 +108,7 @@
     <h3> Sample used: <?= trim($d3); ?> </h3>
     <table style="width:100%">
         <tr>
-            <td><strong>Reverse String</strong></td>
+            <td><strong>Reverse String</strong></td> <!--- Google search --->
             <td><?= strrev(trim($d3)); ?></td>
             <td><code>strrev($string)</code></td>
         </tr>
@@ -123,7 +123,7 @@
             <td><code>strpos($haystack, $needle)</code></td>
         </tr>
         <tr>
-            <td><strong>Shuffle Characters</strong></td>
+            <td><strong>Shuffle Characters</strong></td> <!--- Gogle search --->
             <td><?= str_shuffle(trim($hau)); ?></td>
             <td><code>str_shuffle($string)</code></td>
         </tr>
@@ -132,4 +132,5 @@
     <hr>
 
 </body>
+
 </html>
