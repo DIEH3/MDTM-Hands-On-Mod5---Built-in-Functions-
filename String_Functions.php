@@ -8,6 +8,9 @@
     #Removing and Replacing characters (d3)
     $search = "Dohn";
     $replace = "Don";
+
+    #Multibyte Sample (for the new functions)
+    $mb_sample = "Total: ₱500"; 
 ?>
 
 <!DOCTYPE html>
@@ -104,12 +107,11 @@
 
     <hr>
 
-    <!--- OTHER STRING MANIPULATIONS! --->
-    <h1>Other String Manipulations</h1>
-    <h3>Sample used: <?= trim($d3); ?></h3>
+    <h1>Other Built-in Functions</h1>
+    <h3>Sample used: <?= $mb_sample; ?></h3>
     <table style="width:100%">
         <tr>
-            <td><strong>Reverse String</strong></td> <!-- Google search --->
+            <td><strong>Reverse String</strong></td>
             <td><?= strrev($d3); ?></td>
             <td><code>strrev($string)</code></td>
         </tr>
@@ -124,9 +126,34 @@
             <td><code>strpos($haystack, $needle)</code></td>
         </tr>
         <tr>
-            <td><strong>Shuffle Characters</strong></td> <!-- Gogle search --->
+            <td><strong>Shuffle Characters</strong></td>
             <td><?= str_shuffle($hau); ?></td>
             <td><code>str_shuffle($string)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Multibyte Uppercase</strong></td>
+            <td><?= mb_strtoupper($mb_sample); ?></td>
+            <td><code>mb_strtoupper($string)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Multibyte Lowercase</strong></td>
+            <td><?= mb_strtolower($mb_sample); ?></td>
+            <td><code>mb_strtolower($string)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Multibyte Length</strong></td>
+            <td><?= mb_strlen($mb_sample); ?> Characters</td>
+            <td><code>mb_strlen($string)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Multibyte Position (of "₱")</strong></td>
+            <td><?= mb_strpos($mb_sample, "₱"); ?></td>
+            <td><code>mb_strpos($haystack, $needle)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Multibyte Substring (Currency)</strong></td>
+            <td><?= mb_substr($mb_sample, 7); ?></td>
+            <td><code>mb_substr($string, start)</code></td>
         </tr>
     </table>
 
