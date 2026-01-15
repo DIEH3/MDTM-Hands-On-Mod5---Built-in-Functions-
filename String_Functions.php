@@ -16,6 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Built-in Functions Mod5</title>    
+    <link rel="stylesheet" href="styles.css">
     <style>
         table, th, td {
             border: 1px solid black;
@@ -27,8 +28,8 @@
 </head>
 <body>
 
-    <h1> Changing the Case of Characters </h1>
-    <h3> Sample used: <?php echo $hau; ?> </h3>
+    <h1>Changing the Case of Characters</h1>
+    <h3>Sample used: <?php echo $hau; ?></h3>
     <table style="width:100%">
         <tr>
             <td><strong>Lowercase</strong></td>
@@ -49,8 +50,8 @@
 
     <hr>
 
-    <h1> Counting Characters and Words </h1>
-    <h3> Sample used: <?php echo trim($d3); ?> </h3>
+    <h1>Counting Characters and Words</h1>
+    <h3>Sample used: <?php echo trim($d3); ?></h3>
     <table style="width:100%">
         <tr>
             <td><strong>Number of Characters</strong></td>
@@ -66,8 +67,8 @@
 
     <hr>
 
-    <h1> Removing and Replacing Characters </h1>
-    <h3> Sample used: "<?= $d3; ?>" (with extra spaces) </h3>
+    <h1>Removing and Replacing Characters</h1>
+    <h3>Sample used: "<?= $d3; ?>" (with extra spaces)</h3>
     <table style="width:100%">
         <tr>
             <td><strong>Remove whitespaces from left</strong></td>
@@ -104,12 +105,12 @@
     <hr>
 
     <!--- OTHER STRING MANIPULATIONS! --->
-    <h1> Other String Manipulations </h1>
-    <h3> Sample used: <?= trim($d3); ?> </h3>
+    <h1>Other String Manipulations</h1>
+    <h3>Sample used: <?= trim($d3); ?></h3>
     <table style="width:100%">
         <tr>
-            <td><strong>Reverse String</strong></td> <!--- Google search --->
-            <td><?= strrev(trim($d3)); ?></td>
+            <td><strong>Reverse String</strong></td> <!-- Google search --->
+            <td><?= strrev($d3); ?></td>
             <td><code>strrev($string)</code></td>
         </tr>
         <tr>
@@ -123,8 +124,8 @@
             <td><code>strpos($haystack, $needle)</code></td>
         </tr>
         <tr>
-            <td><strong>Shuffle Characters</strong></td> <!--- Gogle search --->
-            <td><?= str_shuffle(trim($hau)); ?></td>
+            <td><strong>Shuffle Characters</strong></td> <!-- Gogle search --->
+            <td><?= str_shuffle($hau); ?></td>
             <td><code>str_shuffle($string)</code></td>
         </tr>
     </table>
@@ -132,5 +133,4 @@
     <hr>
 
 </body>
-
 </html>
